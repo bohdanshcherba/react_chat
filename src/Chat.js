@@ -9,8 +9,6 @@ import getCurrentDate from "./helpers/getCurrentDate";
 import Preloader from "./components/preloader/preloader";
 
 const Chat = (props) => {
-
-
     const [isLoading, setIsLoading] = useState(false);
     const [items, setItems] = useState([]);
     const [value, setValue] = useState('')
@@ -64,6 +62,7 @@ const Chat = (props) => {
     }
 
     const deleteMessage = (id) => {
+
         setItems(items.filter(e => e.id !== id))
 
     }
@@ -76,8 +75,6 @@ const Chat = (props) => {
 
     return (
         <div className="chat">
-
-
             <PageHeader/>
             {isLoading ? <Preloader/> :
                 <div className='chat_page'>

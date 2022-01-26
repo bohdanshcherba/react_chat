@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './ownMessage.css'
 import {faPen, faTrash} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -6,19 +6,26 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const OwnMessage = ({text, createdAt, messageId, deleteMessage, editMessage}) => {
 
     const re = /[0-9][0-9]:[0-9][0-9]/
+    const [deleted,setDeleted] = useState(false)
 
     const datetime = re.exec(createdAt)
 
     const deleteHandler = () => {
-        deleteMessage(messageId)
+        setDeleted(true)
+
+        setTimeout(()=>{
+            deleteMessage(messageId)
+        },1000)
+
     }
     const editHandler = () => {
+
         editMessage(messageId, text)
     }
 
     return (
 
-        <div className='own-message'>
+        <div  className={deleted? 'own-message deletedMessage': 'own-message'}>
 
             <div className={"own-message-content"}>
                 <p className="message-text">{text}</p>

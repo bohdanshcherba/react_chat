@@ -4,6 +4,26 @@
     display: flex;
 
 }
+@keyframes dropMessage {
+    10%{
+        transform: rotate(-20deg) translateY(-200px);
+
+    }
+
+
+    100%{
+        transform: translateY(300px);
+
+    }
+
+}
+
+.deletedMessage{
+    z-index: 0;
+    position: absolute;
+    animation: dropMessage 2s;
+
+}
 
 .own-message-content {
     position: relative;
