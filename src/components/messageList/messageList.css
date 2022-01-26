@@ -1,0 +1,26 @@
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--add-color);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--add-color-two);
+}
+
+.message-list{
+
+
+    width: 100%;
+    height: calc(100% - 130px);
+    overflow-y: scroll;
+
+
+}
+

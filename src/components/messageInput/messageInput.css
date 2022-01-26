@@ -1,0 +1,43 @@
+
+.message-input{
+    height: 40px;
+    width: 100%;
+
+    margin-top: 20px;
+    display: flex;
+}
+
+
+.message-input-text{
+    border-radius: 15px;
+    width: 80%;
+    height: calc(100% - 6px);
+    resize: none;
+    border: 1px solid var(--add-color);
+    margin-left: 20px;
+    padding-left: 10px;
+
+}
+
+.message-input-text:focus{
+    outline: none;
+}
+
+.message-input-button{
+    width: 10%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--add-color);
+    color: var(--text-color);
+    margin-left: 25px;
+
+    transition-duration: 0.5s;
+}
+
+.message-input-button:hover{
+    background-color: var(--add-color);
+    border: 1px solid var(--add-color-two);
+    color: var(--main-bg-color);
+
+}

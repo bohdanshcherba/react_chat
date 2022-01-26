@@ -1,0 +1,20 @@
+.messages-divider{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid var(--add-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.messages-divider>span{
+    color: white;
+    position: absolute;
+    margin-top: -10px;
+    background-color: #3C6E71;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}

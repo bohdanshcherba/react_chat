@@ -1,0 +1,34 @@
+import React from 'react';
+import './messageInput.css'
+
+
+const MessageInput = props => {
+
+    const submitHandler = (e) => {
+        if (props.isEdit) {
+            props.updateMessage(e)
+
+        } else {
+            props.sendMessage(e)
+
+        }
+    }
+
+    const onEnterPress = (e) => {
+        if (e.keyCode === 13 && e.shiftKey === false) {
+            submitHandler(e)
+        }
+    }
+
+    return (
+        <form className='message-input' onSubmit={submitHandler}>
+                    <textarea onChange={props.handlerOnChange}
+                              value={props.value} className='message-input-text' onKeyDown={onEnterPress}/>
+            <button type='submit' className='message-input-button'>{props.isEdit ? 'Save' : 'Send'}</button>
+        </form>
+
+    );
+}
+
+
+export default MessageInput;
