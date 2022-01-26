@@ -10,7 +10,14 @@ import Preloader from "./components/preloader/preloader";
 
 const Chat = (props) => {
     const [isLoading, setIsLoading] = useState(true);
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useState([{
+        avatar: "https://resizing.flixster.com/kr0IphfLGZqni5JOWDS2P1-zod4=/280x250/v1.cjs0OTQ2NztqOzE4NDk1OzEyMDA7MjgwOzI1MA",
+        createdAt: "2020-07-16T19:48:12.936Z",
+        editedAt: "",
+        id: "80f08600-1b8f-11e8-9629-c7eca82aa7bd",
+        text: "I don’t *** understand. It's the Panama accounts",
+        user: "Ruth",
+        userId: "9e243930-83c9-11e9-8e0c-8f1a686f4ce4"}]);
     const [value, setValue] = useState('')
     const [isEdit, setIsEdit] = useState(false)
     const [idForUpdate, setIdForUpdate] = useState()
@@ -74,11 +81,11 @@ const Chat = (props) => {
     }
 
 
-    if (isLoading){
-        return <Preloader/>
-    }else {
-        return (
-            <div className='chat'>
+    return (
+
+        <div className='chat'>
+            {isLoading ? <Preloader/> : <>
+
                 <Header countMessages={items.length} items={items}/>
                 <MessageList messages={items} deleteMessage={deleteMessage} editMessage={editMessage}/>
                 <MessageInput value={value}
@@ -87,10 +94,13 @@ const Chat = (props) => {
                               sendMessage={sendMessage}
                               updateMessage={updateMessage}/>
 
-            </div>
+            </>   }
 
-        )
-    }
+
+
+        </div>
+
+    )
 
 
 }

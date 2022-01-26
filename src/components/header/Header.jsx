@@ -20,7 +20,7 @@ const Header = ({countMessages, items}) => {
     const day = reDay.exec(lastMessage?.createdAt)
 
 
-    const datetime = (reTwoNumber.exec(day)[0]+'.'+reTwoNumber.exec(month)[0]+'.'+year[0]+' ' + time[0])
+    const datetime =  (reTwoNumber.exec(day)[0]+'.'+reTwoNumber.exec(month)[0]+'.'+year[0]+' ' + time[0])
 
     const members = new Set()
     items?.map((mess) => members.add(mess.userId))
