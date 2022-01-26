@@ -24,7 +24,7 @@ const MessageInput = props => {
         <form className='message-input' onSubmit={submitHandler}>
                     <textarea onChange={props.handlerOnChange}
                               value={props.value} className='message-input-text' onKeyDown={onEnterPress}/>
-            <button type='submit' className='message-input-button'>{props.isEdit ? 'Save' : 'Send'}</button>
+            <button type='submit' className='message-input-button'>Send</button>
         </form>
 
     );

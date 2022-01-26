@@ -36,7 +36,7 @@ const MessageList = props => {
 
                 })
             }
-            {message.userId === "9e243930-83c9-11e9-8e0c-8f1a686f4ce4" ?
+            {message.userId === "CurrentUser" ?
                 <OwnMessage text={message.text}
                             createdAt={message.createdAt}
                             messageId = {message.id}
@@ -65,7 +65,6 @@ const MessageList = props => {
     return (
 
         <div className='message-list'>
-
 
             {Array.from(messageDate).map(item=>{
                 return <MessagesDivider dateMessages={item} key={item}/>

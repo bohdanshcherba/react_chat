@@ -1,8 +1,18 @@
 .own-message {
+    position: relative;
     flex-direction: row-reverse;
     margin: 5px 20px 5px calc(100% - 250px);
     display: flex;
 
+    padding: 10px;
+
+    color: var(--text-color);
+    width: 200px;
+
+    text-align: left;
+    font: 400 .9em 'Open Sans', sans-serif;
+    border: 1px solid var(--add-color);
+    border-radius: 10px;
 }
 @keyframes dropMessage {
     10%{
@@ -23,44 +33,6 @@
     position: absolute;
     animation: dropMessage 2s;
 
-}
-
-.own-message-content {
-    position: relative;
-
-    padding: 10px;
-
-    color: var(--text-color);
-    width: 200px;
-
-    text-align: left;
-    font: 400 .9em 'Open Sans', sans-serif;
-    border: 1px solid var(--add-color);
-    border-radius: 10px;
-}
-
-.own-message-content:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 15px solid var(--main-bg-color);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    bottom: 0;
-    right: -15px;
-}
-
-.own-message-content:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 17px solid var(--add-color);
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    bottom: -1px;
-    right: -17px;
 }
 
 @keyframes writing {
@@ -94,9 +66,11 @@
 }
 
 .message-edit {
+    background-color: white;
+    border: 0;
     position: absolute;
     bottom: 5px;
-    right: 30px;
+    right: 40px;
     cursor: pointer;
 
 }
@@ -108,6 +82,8 @@
 }
 
 .message-delete {
+    background-color: white;
+    border: 0;
     position: absolute;
     bottom: 5px;
     right: 10px;

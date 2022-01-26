@@ -7,12 +7,12 @@ const Message = (props) => {
 
     const [liked, setLiked] = useState(false)
 
-    const onClickHandler = ()=>{
+    const onClickHandler = () => {
         setLiked(!liked)
 
     }
 
-    const {username,avatar,text,createdAt} = props
+    const {username, avatar, text, createdAt} = props
 
     const re = /[0-9][0-9]:[0-9][0-9]/
 
@@ -22,23 +22,14 @@ const Message = (props) => {
 
         <div className='message'>
 
-            <div className='message-user-info'>
+            <img className="message-user-avatar" src={avatar} alt=""/>
+            <div className="message-user-name">{username}</div>
 
-                <img className="message-user-avatar"
-                     src={avatar}
-                     alt=""/>
-                <div className="message-user-name">
-                    {username}
+            <p className="message-text">{text}</p>
+            <div className="message-time">{datetime[0]}</div>
+            <button className={liked ? 'message-like message-liked' : "message-like"} onClick={onClickHandler}>
+                <FontAwesomeIcon icon={faHeart}/></button>
 
-                </div>
-
-            </div>
-
-            <div className="message-content">
-                <p className="message-text">{text}</p>
-                <div className="message-time">{datetime[0]}</div>
-                <div className={liked? 'message-like message-liked': "message-like"} onClick={onClickHandler}><FontAwesomeIcon icon={faHeart} /></div>
-            </div>
 
         </div>
 

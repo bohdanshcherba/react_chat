@@ -9,7 +9,7 @@ import getCurrentDate from "./helpers/getCurrentDate";
 import Preloader from "./components/preloader/preloader";
 
 const Chat = (props) => {
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [items, setItems] = useState([]);
     const [value, setValue] = useState('')
     const [isEdit, setIsEdit] = useState(false)
@@ -38,8 +38,8 @@ const Chat = (props) => {
             editedAt: "",
             id: guid(),
             text: value,
-            user: "Ruth",
-            userId: "9e243930-83c9-11e9-8e0c-8f1a686f4ce4",
+            user: "CurrentUser",
+            userId: "CurrentUser",
         })
 
         setValue('')
@@ -73,25 +73,27 @@ const Chat = (props) => {
         setIsEdit(true)
     }
 
-    return (
-        <div className="chat">
-            <PageHeader/>
-            {isLoading ? <Preloader/> :
-                <div className='chat_page'>
-                    <div className='modal'>
-                        <Header countMessages={items.length} items={items}/>
-                        <MessageList messages={items} deleteMessage={deleteMessage} editMessage={editMessage}/>
-                        <MessageInput value={value}
-                                      isEdit={isEdit}
-                                      handlerOnChange={handlerOnChange}
-                                      sendMessage={sendMessage}
-                                      updateMessage={updateMessage}/>
-                    </div>
-                </div>
 
-            }
-        </div>
-    );
+    if (isLoading){
+        return <Preloader/>
+    }else {
+        return (
+            <div className='chat'>
+                <Header countMessages={items.length} items={items}/>
+                <MessageList messages={items} deleteMessage={deleteMessage} editMessage={editMessage}/>
+                <MessageInput value={value}
+                              isEdit={isEdit}
+                              handlerOnChange={handlerOnChange}
+                              sendMessage={sendMessage}
+                              updateMessage={updateMessage}/>
+
+            </div>
+
+        )
+    }
+
+
 }
+
 
 export default Chat;
