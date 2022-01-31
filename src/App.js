@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route, Routes} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+import {PublicRouters, ProtectedRoutersUser, ProtectedRoutersAdmin} from './common'
+import {LoginPage, UsersListPage, Chat} from './pages'
+
+
+const URL = 'https://edikdolynskyi.github.io/react_sources/messages.json'
+
+const App = () => {
+
+
+    const isUser = true
+    const isAdmin = true
+    const isAuth = isUser || isAdmin
+
+    return (
+
+
+        <div className={'App'}>
+            <Routes>
+
+                <Route path={'*'} element={<div>Not Found</div>}/>
+
+                <Route element={<PublicRouters isAuth={isAuth}/>}>
+                    <Route path={'/login'} element={<LoginPage/>}/>
+                </Route>
+
+                <Route element={<ProtectedRoutersUser isUser={isUser}/>}>
+                    <Route path={'/'} element={<Chat url={URL}/>}/>
+                </Route>
+
+                <Route element={<ProtectedRoutersAdmin isAdmin={isAdmin}/>}>
+                    <Route path={'/users'} element={<UsersListPage/>}/>
+                    <Route path={'/users/edit/:id'} element={<div>edit</div>}/>
+                    <Route path={'/'} element={<Chat url={URL}/>}/>
+                </Route>
+            </Routes>
+        </div>
+
+    );
 }
+
 
 export default App;

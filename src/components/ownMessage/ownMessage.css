@@ -8,25 +8,13 @@
 
     color: var(--text-color);
     width: 200px;
-
+    min-height: 50px;
     text-align: left;
     font: 400 .9em 'Open Sans', sans-serif;
     border: 1px solid var(--add-color);
     border-radius: 10px;
 }
-@keyframes dropMessage {
-    10%{
-        transform: rotate(-20deg) translateY(-200px);
 
-    }
-
-
-    100%{
-        transform: translateY(300px);
-
-    }
-
-}
 
 .deletedMessage{
     z-index: 0;
@@ -35,35 +23,6 @@
 
 }
 
-@keyframes writing {
-    25% {
-        transform: rotate(-20deg);
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    75% {
-        transform: rotate(-20deg);
-    }
-    100% {
-        transform: rotate(-5deg);
-    }
-}
-
-@keyframes dropping {
-    25% {
-        transform: rotate(-10deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    75% {
-        transform: rotate(-10deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
 
 .message-edit {
     background-color: white;

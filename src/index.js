@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Chat from './Chat';
+import Chat from './pages/Chat';
+import {BrowserRouter} from 'react-router-dom'
+import App from "./App";
 
-const URL = 'https://edikdolynskyi.github.io/react_sources/messages.json'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Chat url={URL}/>
-  </React.StrictMode>,
+
+      <BrowserRouter>
+          <App/>
+      </BrowserRouter>,
   document.getElementById('root')
 );
 

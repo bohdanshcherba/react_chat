@@ -1,12 +1,12 @@
 import './Chat.css';
 import React, {useEffect, useState} from 'react';
-import Header from "./components/header/Header";
-import PageHeader from "./components/pageHeader/pageHeader";
-import MessageList from "./components/messageList/messageList";
-import MessageInput from "./components/messageInput/messageInput";
-import guid from "./helpers/genereteRandomId";
-import getCurrentDate from "./helpers/getCurrentDate";
-import Preloader from "./components/preloader/preloader";
+import Header from "../../components/header/Header";
+
+import MessageList from "../../components/messageList/messageList";
+import MessageInput from "../../components/messageInput/messageInput";
+import guid from "../../helpers/genereteRandomId";
+import getCurrentDate from "../../helpers/getCurrentDate";
+import Preloader from "../../components/preloader/preloader";
 
 const Chat = (props) => {
     const [isLoading, setIsLoading] = useState(true);

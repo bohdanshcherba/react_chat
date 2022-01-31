@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28823e63-beb0-4c65-8177-6edab3574b4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/protectedRouters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/protectedRoutersAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/publicRouters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Chat/Chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Users/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsa.js" beforeDir="false" afterPath="$PROJECT_DIR$/bsa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Chat/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/message/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/message/message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/message.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/messageInput/messageInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/messageInput/messageInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/messageList/messageList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/messageList/messageList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/messageList/messageList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/messageList/messageList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,6 +61,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\Code\BSA21\react_chat\src\pages\Chat" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,6 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1643212574500</updated>
       <workItem from="1643212575653" duration="6565000" />
+      <workItem from="1643548594363" duration="10962000" />
+      <workItem from="1643627649146" duration="457000" />
     </task>
     <servers />
   </component>
@@ -69,5 +94,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

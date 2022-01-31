@@ -10,7 +10,7 @@
 
     color: var(--text-color);
     width: 200px;
-
+    min-height: 100px;
     text-align: left;
     font: 400 .9em 'Open Sans', sans-serif;
     border: 1px solid var(--add-color);
@@ -23,6 +23,7 @@
 }
 
 .message-user-avatar {
+    position: relative;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -42,7 +43,7 @@
 .message-text {
     padding-left: 10px;
     margin-top: 0;
-    padding-bottom: 50px;
+
     overflow: hidden;
     overflow-wrap: break-word;
 }

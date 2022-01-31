@@ -1,2 +1,2 @@
-import Chat from "./src/Chat";
+import {Chat} from "./src/pages";
 export default Chat
