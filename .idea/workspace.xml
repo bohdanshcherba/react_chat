@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28823e63-beb0-4c65-8177-6edab3574b4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/conrollers/messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/conrollers/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/data/messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/data/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/userItem/userItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/userItem/userItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/userModal/userModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/userModal/userModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/chat/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/chat/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/users/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/users/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/users/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/message/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pageHeader/pageHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pageHeader/pageHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pageHeader/pageHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pageHeader/pageHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Chat/Chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Chat/Chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +74,7 @@
       <workItem from="1643212575653" duration="6565000" />
       <workItem from="1643548594363" duration="10962000" />
       <workItem from="1643627649146" duration="27520000" />
-      <workItem from="1643706517269" duration="18687000" />
+      <workItem from="1643706517269" duration="19030000" />
     </task>
     <servers />
   </component>
