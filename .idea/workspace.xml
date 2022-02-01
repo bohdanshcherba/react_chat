@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28823e63-beb0-4c65-8177-6edab3574b4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/helpers/getCurrentDate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editMessageModal/editMessageModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editMessageModal/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/chat.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/chat/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/conrollers/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/conrollers/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/messageInput/messageInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/messageInput/messageInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/messageList/messageList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/messageList/messageList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ownMessage/ownMessage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Chat/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/chat/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/chat/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/chat/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/chat/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/conrollers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/conrollers/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +74,7 @@
       <workItem from="1643212575653" duration="6565000" />
       <workItem from="1643548594363" duration="10962000" />
       <workItem from="1643627649146" duration="27520000" />
-      <workItem from="1643706517269" duration="35360000" />
+      <workItem from="1643706517269" duration="35693000" />
     </task>
     <servers />
   </component>

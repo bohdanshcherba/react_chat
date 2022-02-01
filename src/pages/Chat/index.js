@@ -4,18 +4,15 @@ import Header from "../../components/header/Header";
 
 import MessageList from "../../components/messageList/messageList";
 import MessageInput from "../../components/messageInput/messageInput";
-import guid from "../../helpers/genereteRandomId";
 import getCurrentDate from "../../helpers/getCurrentDate";
 import Preloader from "../../components/preloader/preloader";
 import {useDispatch,useSelector} from "react-redux";
 import {chatActionCreator} from '../../store/actions'
-import {message} from "antd";
 import EditMessageModal from "../../components/editMessageModal/editMessageModal";
-const Chat = (props) => {
+const Chat = () => {
 
     const dispatch = useDispatch()
     const [value, setValue] = useState('')
-    const [isEdit, setIsEdit] = useState(false)
     const [idForUpdate, setIdForUpdate] = useState()
 
     const items = useSelector(state => state.chat.messages)
@@ -48,7 +45,6 @@ const Chat = (props) => {
 
     const updateMessage = (e,text) => {
         e.preventDefault()
-        console.log(idForUpdate,text)
         dispatch(chatActionCreator.updateMessage({id:idForUpdate, text:text}))
 
     }

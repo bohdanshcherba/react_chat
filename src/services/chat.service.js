@@ -37,7 +37,6 @@ class Chat {
     }
 
     delete = async (id) => {
-        console.log(id)
         return await fetch(`${url}/chat/message/${id}`,{
                 method: 'DELETE',
 

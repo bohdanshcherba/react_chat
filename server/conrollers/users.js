@@ -46,6 +46,7 @@ const createUser = (req, res) => {
 
 const updateUser = (req, res) => {
     const id = req.params.id
+
     const postData = {
         username: req.body.username,
         password: req.body.password
@@ -55,8 +56,18 @@ const updateUser = (req, res) => {
     }
 
     if (postData.password || postData.username) {
-        users[id].username = postData.username || users[id].username
-        users[id].password = postData.password || users[id].password
+        const index = users.findIndex(user => user.id == id)
+
+        console.log(index)
+        if (index === -1) {
+
+            return res.status(404).send('user not found')
+        }
+            else {
+            users[index].username = postData.username || users[index].username
+            users[index].password = postData.password || users[index].password
+        }
+
     }
 
 

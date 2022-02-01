@@ -24,10 +24,10 @@ const PageHeader = (props) => {
                 <FontAwesomeIcon icon={faComments} size="2x"/>
                 <h5>Messenger</h5>
             </Link>
-
+            {props.isAuth ?
             <Link to={'/login'} onClick={logoutHandler}>
                 <h5>log-out</h5>
-            </Link>
+            </Link>:null}
         </header>
     );
 }

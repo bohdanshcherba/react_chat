@@ -25,7 +25,7 @@ const App = () => {
 
         <div className={'App'}>
 
-            <PageHeader isAdmin={isAdmin}/>
+            <PageHeader isAdmin={isAdmin} isAuth={isAuth}/>
             <Routes>
 
                 <Route path={'*'} element={<div>Not Found</div>}/>
