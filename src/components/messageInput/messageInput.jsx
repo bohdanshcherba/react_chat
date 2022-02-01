@@ -5,13 +5,8 @@ import './messageInput.css'
 const MessageInput = props => {
 
     const submitHandler = (e) => {
-        if (props.isEdit) {
-            props.updateMessage(e)
+        props.sendMessage(e)
 
-        } else {
-            props.sendMessage(e)
-
-        }
     }
 
     const onEnterPress = (e) => {

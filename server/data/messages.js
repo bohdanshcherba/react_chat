@@ -111,7 +111,7 @@ let messages = [{
     "createdAt": "2020-07-16T19:58:06.686Z",
     "editedAt": ""
 }, {
-    "id": "1",
+    "id": "80e032461",
     "userId": "9e243930-83c9-11e9-8e0c-8f1a686f4ce4",
     "avatar": "https://resizing.flixster.com/kr0IphfLGZqni5JOWDS2P1-zod4=/280x250/v1.cjs0OTQ2NztqOzE4NDk1OzEyMDA7MjgwOzI1MA",
     "user": "Ruth",
@@ -127,7 +127,7 @@ let messages = [{
     "createdAt": "2020-07-16T19:52:15.334Z",
     "editedAt": ""
 }, {
-    "id": "80e03245-1b8f-11e8-9629-c7eca82aa7bd",
+    "id": 0,
     "userId": "5328dba1-1b8f-11e8-9629-c7eca82aa7bd",
     "avatar": "https://www.aceshowbiz.com/images/photo/tom_pelphrey.jpg",
     "user": "Ben",

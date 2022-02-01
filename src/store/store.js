@@ -1,16 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit'
+import {configureStore} from '@reduxjs/toolkit'
 import * as services from '../services/services'
-import {UserReducer} from "./rootReducer";
-import { composeWithDevTools } from 'redux-devtools-extension';
+import {UserReducer, ChatReducer} from "./rootReducer";
 
 export const store = configureStore({
     reducer: {
-        user: UserReducer
-
+        user: UserReducer,
+        chat: ChatReducer
     },
     middleware: getDefaultMiddleware => (getDefaultMiddleware({
         thunk: {
-            extraArgument: { services }
+            extraArgument: {services}
         }
     })),
     devTools: true

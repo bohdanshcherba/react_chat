@@ -7,30 +7,23 @@ import MessageInput from "../../components/messageInput/messageInput";
 import guid from "../../helpers/genereteRandomId";
 import getCurrentDate from "../../helpers/getCurrentDate";
 import Preloader from "../../components/preloader/preloader";
-
+import {useDispatch,useSelector} from "react-redux";
+import {chatActionCreator} from '../../store/actions'
+import {message} from "antd";
+import EditMessageModal from "../../components/editMessageModal/editMessageModal";
 const Chat = (props) => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [items, setItems] = useState([{
-        avatar: "https://resizing.flixster.com/kr0IphfLGZqni5JOWDS2P1-zod4=/280x250/v1.cjs0OTQ2NztqOzE4NDk1OzEyMDA7MjgwOzI1MA",
-        createdAt: "2020-07-16T19:48:12.936Z",
-        editedAt: "",
-        id: "80f08600-1b8f-11e8-9629-c7eca82aa7bd",
-        text: "I don’t *** understand. It's the Panama accounts",
-        user: "Ruth",
-        userId: "9e243930-83c9-11e9-8e0c-8f1a686f4ce4"}]);
+
+    const dispatch = useDispatch()
     const [value, setValue] = useState('')
     const [isEdit, setIsEdit] = useState(false)
     const [idForUpdate, setIdForUpdate] = useState()
 
-    useEffect(() => {
-        setIsLoading(true);
-        fetch(props?.url).then(res => res.json())
-            .then(
-                (result) => {
-                    setIsLoading(false);
-                    setItems(result);
-                })
+    const items = useSelector(state => state.chat.messages)
+    const user = useSelector(state => state.user.currentUser)
+    const isLoading = useSelector(state => state.chat.preloader)
 
+    useEffect(() => {
+        dispatch(chatActionCreator.getMessages())
     }, [])
 
     const handlerOnChange = (e) => {
@@ -39,47 +32,30 @@ const Chat = (props) => {
 
     const sendMessage = (e) => {
         e.preventDefault()
-        items.push({
-            avatar: "https://resizing.flixster.com/kr0IphfLGZqni5JOWDS2P1-zod4=/280x250/v1.cjs0OTQ2NztqOzE4NDk1OzEyMDA7MjgwOzI1MA",
-            createdAt: getCurrentDate(),
-            editedAt: "",
-            id: guid(),
-            text: value,
-            user: "CurrentUser",
-            userId: "CurrentUser",
-        })
+        const message ={
+            "user": user?.username,
+            "text": value,
+            "userId": user?.id,
+            "createdAt": getCurrentDate()
+        }
+
+        dispatch(chatActionCreator.sendMessage(message))
+
 
         setValue('')
 
     }
 
-    const updateMessage = (e) => {
+    const updateMessage = (e,text) => {
         e.preventDefault()
-        setIsEdit(false)
-
-        let index = items.findIndex((m => m.id === idForUpdate));
-
-        items[index].text = value
-        items[index].editedAt = getCurrentDate()
-
-        console.log(items[index])
-
-        setValue('')
+        console.log(idForUpdate,text)
+        dispatch(chatActionCreator.updateMessage({id:idForUpdate, text:text}))
 
     }
 
     const deleteMessage = (id) => {
-
-        setItems(items.filter(e => e.id !== id))
-
+        dispatch(chatActionCreator.deleteMessage(id))
     }
-
-    const editMessage = (id, text) => {
-        setValue(text)
-        setIdForUpdate(id)
-        setIsEdit(true)
-    }
-
 
     return (
 
@@ -87,12 +63,12 @@ const Chat = (props) => {
             {isLoading ? <Preloader/> : <>
 
                 <Header countMessages={items.length} items={items}/>
-                <MessageList messages={items} deleteMessage={deleteMessage} editMessage={editMessage}/>
+                <MessageList messages={items} userId={user?.id} deleteMessage={deleteMessage} setIdForUpdate={setIdForUpdate}/>
+                <EditMessageModal updateMessage={updateMessage}/>
                 <MessageInput value={value}
-                              isEdit={isEdit}
                               handlerOnChange={handlerOnChange}
                               sendMessage={sendMessage}
-                              updateMessage={updateMessage}/>
+                              />
 
             </>   }
 

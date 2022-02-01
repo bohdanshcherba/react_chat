@@ -2,24 +2,23 @@ import React, {useState} from 'react';
 import './ownMessage.css'
 import {faPen, faTrash} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-const OwnMessage = ({text, createdAt, messageId, deleteMessage, editMessage}) => {
+import {useDispatch} from "react-redux";
+import {chatActionCreator} from '../../store/actions'
+const OwnMessage = ({text, createdAt, messageId, deleteMessage,setIdForUpdate}) => {
 
     const re = /[0-9][0-9]:[0-9][0-9]/
-    const [deleted, setDeleted] = useState(false)
+    const dispatch = useDispatch()
+
 
     const datetime = re.exec(createdAt)
 
     const deleteHandler = () => {
-        // setDeleted(true)
-        //
-        // setTimeout(() => {
-        //
-        // }, 1000)
         deleteMessage(messageId)
     }
+
     const editHandler = () => {
-        editMessage(messageId, text)
+        setIdForUpdate(messageId)
+        dispatch(chatActionCreator.openModal(true))
     }
 
     return (

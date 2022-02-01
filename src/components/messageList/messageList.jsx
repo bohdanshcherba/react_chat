@@ -36,12 +36,13 @@ const MessageList = props => {
 
                 })
             }
-            {message.userId === "CurrentUser" ?
+            {message.userId === props.userId ?
                 <OwnMessage text={message.text}
                             createdAt={message.createdAt}
                             messageId = {message.id}
                             deleteMessage={props.deleteMessage}
-                            editMessage={props.editMessage}
+                            setIdForUpdate={props.setIdForUpdate}
+
                 />
                             :
                 <Message username={message.user}
