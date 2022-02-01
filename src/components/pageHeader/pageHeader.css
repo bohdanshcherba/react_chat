@@ -2,15 +2,20 @@ header{
     background-color: var(--main-bg-color);
     height: 70px;
     width: 100%;
-    position: fixed;
     box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
     color: var(--text-color);
     display: flex;
+    position: absolute;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    top: 0;
 }
 
 header h5{
     margin-left: 10px;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}

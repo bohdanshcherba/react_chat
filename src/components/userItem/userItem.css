@@ -1,0 +1,44 @@
+.user-item{
+    display: flex;
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+
+
+}
+
+.user-item h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+}
+
+.user-item button{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--add-color-two);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    width: 5.5vw;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+}
+.user-item button:hover {
+    background-color: var(--add-color-two);
+    border: 1px solid var(--add-color);
+    color: var(--main-bg-color);
+
+}
+.user-delete{
+    position: absolute;
+    right: 5px;
+
+}
+.user-edit{
+    position: absolute;
+    right: 9vw;
+
+}

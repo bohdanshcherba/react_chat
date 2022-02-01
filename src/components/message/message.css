@@ -10,7 +10,7 @@
 
     color: var(--text-color);
     width: 200px;
-    min-height: 100px;
+    min-height: 110px;
     text-align: left;
     font: 400 .9em 'Open Sans', sans-serif;
     border: 1px solid var(--add-color);

@@ -1,15 +1,28 @@
 import React from 'react';
 import {  Form, Input, Button, Checkbox  } from 'antd'
-
+import { useDispatch, useSelector} from 'react-redux'
+import {usersActionCreator} from "../../store/actions";
 
 const Login = () => {
+
+    const dispatch = useDispatch()
+
+    const onSubmit = async (field) => {
+        const data = {username: field.username,
+            password: field.password
+        }
+
+        await dispatch(usersActionCreator.login(data))
+
+    }
+
+
     return (
         <Form
 
-            onFinish={()=>{console.log('e')}}
+            onFinish={onSubmit}
             onFinishFailed={()=>{
                 console.log('e')}}
-            autoComplete="off"
         >
             <Form.Item
                 label="Username"

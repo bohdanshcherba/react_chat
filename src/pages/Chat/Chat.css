@@ -2,8 +2,9 @@
 .chat {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  height: 90%;
+  margin-top: 50px;
+  width: 55%;
+  height: 75%;
   border: 1px solid var(--add-color-two);
   border-radius: 15px;
   box-shadow: 0 0 29px 8px rgba(34, 60, 80, 0.2);

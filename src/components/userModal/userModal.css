@@ -1,0 +1,18 @@
+.modal-users{
+    background-color:RGBA(0,0,0,0.31);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 250px);
+
+    margin: 0;
+    height: 300px;
+    width: 500px;
+}
+
+.user-create{
+    background-color: #3C6E71!important;
+}
